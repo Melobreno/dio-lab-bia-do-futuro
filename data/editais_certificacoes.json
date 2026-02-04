@@ -1,0 +1,86 @@
+[
+    {
+      "certificacao": "CPA-10 (ANBIMA)",
+      "descricao": "Voltada para a prospecção e venda de produtos de investimento para público geral.",
+      "modulos": [
+        {
+          "id": 1,
+          "nome": "Sistema Financeiro Nacional",
+          "peso_proporcional": "5% a 10%",
+          "topicos_chave": ["CMN", "BACEN", "CVM", "ANBIMA"]
+        },
+        {
+          "id": 2,
+          "nome": "Ética, Regulamentação e API",
+          "peso_proporcional": "15% a 20%",
+          "topicos_chave": ["Lavagem de Dinheiro", "Suitability", "Código de Ética"]
+        },
+        {
+          "id": 3,
+          "nome": "Fundos de Investimento",
+          "peso_proporcional": "20% a 25%",
+          "topicos_chave": ["Taxas", "Classificação CVM", "Tributação"]
+        }
+      ]
+    },
+    {
+      "certificacao": "CPA-20 (ANBIMA)",
+      "descricao": "Abrange a CPA-10 e habilita o atendimento a clientes de alta renda (Private, Corporate, Investidores Qualificados).",
+      "modulos": [
+        {
+          "id": 1,
+          "nome": "Mensuração e Gestão de Performance e Riscos",
+          "peso_proporcional": "12% a 18%",
+          "topicos_chave": ["Risco de Mercado", "Crédito e Liquidez", "VaR", "Sharpe"]
+        },
+        {
+          "id": 2,
+          "nome": "Instrumentos de Renda Variável e Renda Fixa",
+          "peso_proporcional": "17% a 25%",
+          "topicos_chave": ["Debêntures", "Ações", "CDB", "Tesouro Direto"]
+        }
+      ]
+    },
+    {
+      "certificacao": "CEA (ANBIMA)",
+      "descricao": "Especialista em investimentos. Autoriza a indicação de produtos e assessoria, substituindo CPA-10/20.",
+      "modulos": [
+        {
+          "id": 1,
+          "nome": "Mercado de Derivativos",
+          "peso_proporcional": "15% a 20%",
+          "topicos_chave": ["Opções", "Termo", "Futuros", "Swaps"]
+        },
+        {
+          "id": 2,
+          "nome": "Planejamento de Investimentos",
+          "peso_proporcional": "15% a 20%",
+          "topicos_chave": ["Análise do Perfil", "Estratégias de Alocação", "Benchmarks"]
+        }
+      ]
+    },
+    {
+      "certificacao": "CFP® (Planejar)",
+      "descricao": "Certificado de Planejador Financeiro, foco em planejamento de vida, sucessão e investimentos. Padrão internacional.",
+      "modulos": [
+        {
+          "id": 1,
+          "nome": "Planejamento Financeiro e Ética",
+          "peso_proporcional": "20%",
+          "topicos_chave": ["Gestão de Fluxo de Caixa", "Código de Ética CFP"]
+        },
+        {
+          "id": 2,
+          "nome": "Planejamento Sucessório",
+          "peso_proporcional": "15%",
+          "topicos_chave": ["Direito de Família", "Regimes de Bens", "Inventário"]
+        },
+        {
+          "id": 3,
+          "nome": "Gestão de Riscos e Seguros",
+          "peso_proporcional": "15%",
+          "topicos_chave": ["Seguros de Vida", "Previdência Complementar"]
+        }
+      ]
+    }
+  ]

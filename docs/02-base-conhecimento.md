@@ -2,54 +2,40 @@
 
 ## Dados Utilizados
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
-
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
-
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
+| `questoes_simulados.csv` | CSV | Banco de questões para geração de testes e simulados. |
+| `editais_certificacoes.json` | JSON | Mapeamento de pesos e tópicos obrigatórios (CPA-10, 20, CEA). |
+| `historico_estudante.json` | JSON | Armazena erros e acertos para personalizar a trilha de estudos. |
+| `glossario_tecnico.csv` | CSV | Base de termos técnicos para garantir precisão nas explicações. |
 
 ---
 
 ## Adaptações nos Dados
 
-> Você modificou ou expandiu os dados mockados? Descreva aqui.
-
-[Sua descrição aqui]
+Os dados originais foram expandidos para incluir uma coluna de **"Grau de Dificuldade"** e **"Tags de Módulo"** em cada questão. Isso permite que o EduCaFIN filtre perguntas específicas de "Derivativos" ou "Ética" quando identificar uma fraqueza recorrente do estudante.
 
 ---
 
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
-
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+A base de editais e o glossário são carregados via **RAG (Retrieval-Augmented Generation)** utilizando um banco vetorial. Já o histórico do estudante e as questões do simulado atual são carregados na memória da sessão para garantir agilidade na resposta.
 
 ### Como os dados são usados no prompt?
-> Os dados vão no system prompt? São consultados dinamicamente?
-
-[Sua descrição aqui]
+Os dados são consultados dinamicamente. Quando o usuário erra uma questão, o agente busca na base de editais qual a importância daquele tópico e insere no `System Prompt` a instrução: *"O usuário falhou em um tópico de peso 20% no edital. Priorize uma explicação técnica profunda antes de seguir para a próxima questão."*
 
 ---
 
 ## Exemplo de Contexto Montado
 
-> Mostre um exemplo de como os dados são formatados para o agente.
+```text
+Contexto do Estudante:
+- Certificação Alvo: CPA-20
+- Nível Atual: Intermediário
+- Módulo Crítico: Instrumentos de Renda Variável (Taxa de acerto: 45%)
 
-```
-Dados do Cliente:
-- Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
-
-Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
-...
-```
+Último Erro:
+- Questão ID: 402 (Tópico: Tributação de Ações)
+- Resposta do Usuário: "Isenção para vendas até 15k"
+- Fato Correto: Isenção de IR para PF em vendas até 20k no mês.

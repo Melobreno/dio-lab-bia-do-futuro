@@ -1,0 +1,102 @@
+[
+    {
+      "id": "USER_001",
+      "nome": "Carlos Silva",
+      "certificacao_alvo": "CPA-10",
+      "nivel_carreira": "Estudante (Entrada)",
+      "modulo_critico": "Fundos de Investimento",
+      "taxa_acerto_geral": 0.45,
+      "ultima_sessao": "2026-02-01",
+      "comentario_agente": "Dificuldade com conceitos de Come-Cotas. Precisa de base em tributação."
+    },
+    {
+      "id": "USER_002",
+      "nome": "Ana Paula",
+      "certificacao_alvo": "CPA-20",
+      "nivel_carreira": "Gerente de Relacionamento Junior",
+      "modulo_critico": "Mensuração de Risco",
+      "taxa_acerto_geral": 0.72,
+      "ultima_sessao": "2026-02-03",
+      "comentario_agente": "Domina produtos, mas falha em cálculos de VaR e Sharpe. Focar em estatística."
+    },
+    {
+      "id": "USER_003",
+      "nome": "Ricardo Mendes",
+      "certificacao_alvo": "CEA",
+      "nivel_carreira": "Especialista em Investimentos",
+      "modulo_critico": "Derivativos",
+      "taxa_acerto_geral": 0.60,
+      "ultima_sessao": "2026-01-28",
+      "comentario_agente": "Sólido em Renda Fixa. Bloqueio em estratégias de Hedge com Opções."
+    },
+    {
+      "id": "USER_004",
+      "nome": "Mariana Luz",
+      "certificacao_alvo": "CFP®",
+      "nivel_carreira": "Senior Financial Planner",
+      "modulo_critico": "Planejamento Sucessório",
+      "taxa_acerto_geral": 0.85,
+      "ultima_sessao": "2026-02-02",
+      "comentario_agente": "Excelente desempenho. Revisar apenas regimes de bens e ITCMD para o exame."
+    },
+    {
+      "id": "USER_005",
+      "nome": "Breno Melo",
+      "certificacao_alvo": "CPA-20",
+      "nivel_carreira": "Estudante de Análise e Desenv. de Sistemas",
+      "modulo_critico": "Sistema Financeiro Nacional",
+      "taxa_acerto_geral": 0.55,
+      "ultima_sessao": "2026-02-03",
+      "comentario_agente": "Perfil técnico. Facilidade com lógica, mas confunde hierarquia CMN vs BACEN."
+    },
+    {
+      "id": "USER_006",
+      "nome": "Fernanda Costa",
+      "certificacao_alvo": "CPA-10",
+      "nivel_carreira": "Transição de Carreira (Varejo)",
+      "modulo_critico": "Ética e Regulamentação",
+      "taxa_acerto_geral": 0.30,
+      "ultima_sessao": "2026-01-30",
+      "comentario_agente": "Iniciante absoluta. Priorizar trilha de nivelamento sobre Suitability e Lavagem de Dinheiro."
+    },
+    {
+      "id": "USER_007",
+      "nome": "Gustavo Rocha",
+      "certificacao_alvo": "CEA",
+      "nivel_carreira": "Bancário Experiente (CPA-20 ativo)",
+      "modulo_critico": "Instrumentos de Renda Fixa",
+      "taxa_acerto_geral": 0.78,
+      "ultima_sessao": "2026-02-01",
+      "comentario_agente": "Dificuldade pontual em Duration de Macaulay e Convexidade."
+    },
+    {
+      "id": "USER_008",
+      "nome": "Juliana Lima",
+      "certificacao_alvo": "CPA-20",
+      "nivel_carreira": "Estagiária de Private Banking",
+      "modulo_critico": "Previdência Complementar",
+      "taxa_acerto_geral": 0.65,
+      "ultima_sessao": "2026-02-03",
+      "comentario_agente": "Confunde sistematicamente as regras de resgate entre PGBL e VGBL."
+    },
+    {
+      "id": "USER_009",
+      "nome": "Roberto Souza",
+      "certificacao_alvo": "CFP®",
+      "nivel_carreira": "Autônomo / Consultor",
+      "modulo_critico": "Gestão Fiscal e Tributária",
+      "taxa_acerto_geral": 0.50,
+      "ultima_sessao": "2026-01-25",
+      "comentario_agente": "Focar em tributação de ativos financeiros e compensação de perdas em Renda Variável."
+    },
+    {
+      "id": "USER_010",
+      "nome": "Larissa Veras",
+      "certificacao_alvo": "CPA-10",
+      "nivel_carreira": "Caixa Bancário",
+      "modulo_critico": "Mercado Financeiro (Conceitos)",
+      "taxa_acerto_geral": 0.90,
+      "ultima_sessao": "2026-02-03",
+      "comentario_agente": "Pronta para o exame. Sugerir upgrade para trilha de CPA-20 imediatamente após aprovação."
+    }
+  ]
